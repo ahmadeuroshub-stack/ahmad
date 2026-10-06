@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ AHMAD 
+# ⚡ AHMAD
 
 ### **Senior Full-Stack Software Engineer & Systems Automation Architect**
 
@@ -11,32 +11,42 @@
 ---
 
 ```typescript
-interface SoftwareEngineer {
-  name: string;
-  title: string;
-  location: string;
-  expertise: string[];
-  currentFocus: string;
-  architecture: string[];
-  status: string;
+interface EngineeringProfile {
+  identity: {
+    name: string;
+    role: string;
+    location: string;
+    status: string;
+  };
+  specializations: string[];
+  systemArchitecture: {
+    frontend: string[];
+    backend: string[];
+    automation: string[];
+    cloudInfrastructure: string[];
+  };
+  designPhilosophy: string;
 }
 
-const developer: SoftwareEngineer = {
-  name: "Ahmad",
-  title: "Full-Stack Software Engineer & Systems Automation Architect",
-  location: "Rawalpindi, Pakistan",
-  expertise: [
-    "Web Application Engineering",
-    "Headless Browser Automation",
-    "RESTful API & Middleware Design",
+const developer: EngineeringProfile = {
+  identity: {
+    name: "Ahmad",
+    role: "Full-Stack Software Engineer & Systems Automation Architect",
+    location: "Rawalpindi, Pakistan",
+    status: "Available for Senior Engineering Roles & Enterprise Contracts"
+  },
+  specializations: [
+    "Enterprise Web Application Development",
+    "Headless Browser Automation Pipelines",
+    "Distributed Web Data Scrapers",
+    "RESTful API & Middleware Microservices",
     "Modern Design Systems & Glassmorphism UI"
   ],
-  currentFocus: "Architecting resilient data extraction pipelines and scalable Node.js microservices.",
-  architecture: [
-    "Event-Driven Workflows",
-    "Distributed Web Scraping",
-    "Clean Code & Modular Patterns",
-    "CI/CD & Cloud Deployments"
-  ],
-  status: "Open to High-Impact Engineering Roles & Technical Collaborations"
+  systemArchitecture: {
+    frontend: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+    backend: ["Node.js", "Express.js", "Python Fast API/Flask", "RESTful Architecture"],
+    automation: ["Playwright", "Selenium WebDriver", "Async Queue Engines"],
+    cloudInfrastructure: ["Vercel", "MongoDB Atlas", "PostgreSQL", "Docker", "Git Actions"]
+  },
+  designPhilosophy: "Modular architecture, zero-downtime fault tolerance, strict type safety, and polished user interactions."
 };
